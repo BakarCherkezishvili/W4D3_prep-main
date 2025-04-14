@@ -13,12 +13,14 @@ greatestCommonFactor(4, 8); // => 4
 greatestCommonFactor(45, 30); // => 15
 ***********************************************************************/
 
-function greatestCommonFactor(num1, num2) {for ( let i=num1; i>=1; i--) {
-    if (num1 % i === 0 && num2 % i === 0 ) { return i
-  
+function greatestCommonFactor(num1, num2) {
+  for (let i = num1; i >= 1; i--) {
+    if (num1 % i === 0 && num2 % i === 0) {
+      return i
+
     }
   }
-  }
+}
   console.log(greatestCommonFactor)(10,15);
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = greatestCommonFactor;
