@@ -9,10 +9,11 @@ alternateCase('bOotCamPpREP'); // => 'BoOtCaMpPrEp'
 alternateCase('hello'); // => 'HeLlO'
 ***********************************************************************/
 
-function alternateCase(str) {
-    var newStr = '';
 
-    for (var i = 0; i < str.length; i += 1) {
+function alternateCase(str) {
+    let newStr = '';
+
+    for (let i = 0; < str.length; i += 1) {
         if (i % 2 === 0) {
             newStr += str[i].toUpperCase();
         } else {
@@ -23,6 +24,21 @@ function alternateCase(str) {
     return newStr;
 }
 
+
+// function alternateCase(str) {
+//     var newStr = '';
+  
+//     for (var i = 0; i < str.length; i += 1) {
+//       if (i % 2 === 0) {
+//         newStr += str[i].toUpperCase();
+//       } else {
+//         newStr += str[i].toLowerCase();
+//       }
+//     }
+  
+//     return newStr;
+//   }
+  
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = alternateCase;
